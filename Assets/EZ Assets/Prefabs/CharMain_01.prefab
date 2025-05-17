@@ -30,6 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2156723300295213216}
+  - {fileID: 8387315137279813221}
   m_Father: {fileID: 8922401890826766454}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &225822724376220627
@@ -140,8 +141,9 @@ GameObject:
   - component: {fileID: 5970415570394693709}
   - component: {fileID: 8880859218394088868}
   - component: {fileID: 1087682985573794927}
+  - component: {fileID: 2429827219624178154}
   m_Layer: 0
-  m_Name: LeftColider
+  m_Name: HitBotLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,12 +157,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172710337425427144}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.004392463, y: 0.007956358, z: 0.86283827, w: 0.5053985}
-  m_LocalPosition: {x: -0.021, y: -0.017, z: 0}
-  m_LocalScale: {x: 0.17, y: 0.17, z: 0.17}
+  m_LocalRotation: {x: -0.002506231, y: 0.003999876, z: 0.9067815, w: 0.42157453}
+  m_LocalPosition: {x: -0.026387298, y: -0.04628123, z: 0.0003987271}
+  m_LocalScale: {x: 0.17, y: 0.17000008, z: 0.17000002}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8922401890826766454}
+  m_Father: {fileID: 8622182797923777029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5970415570394693709
 MeshFilter:
@@ -233,6 +235,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: -0.00000023841858, y: 0, z: 0.00000011920929}
+--- !u!114 &2429827219624178154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172710337425427144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda654780a01245d3923785267441ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1267671780194872007
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +936,7 @@ GameObject:
   - component: {fileID: 1410636220650669335}
   - component: {fileID: 5397579245053452162}
   - component: {fileID: 4882863974296852984}
+  - component: {fileID: 747913962684272500}
   m_Layer: 0
   m_Name: RightColider
   m_TagString: Untagged
@@ -1015,6 +1030,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: -0.00000023841858, y: 0, z: 0.00000011920929}
+--- !u!114 &747913962684272500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4712419897036896390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda654780a01245d3923785267441ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4944388434079486133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1311,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8622182797923777029}
-  - {fileID: 8387315137279813221}
   m_Father: {fileID: 270483084402028498}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7656178564508081089

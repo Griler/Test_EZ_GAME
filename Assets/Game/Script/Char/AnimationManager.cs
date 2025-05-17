@@ -15,12 +15,14 @@ public class AnimationManager : MonoBehaviour, IAnimation
 
     public void PlayAnimation(string animationName)
     {
+        Debug.Log(animationName+ " ," + animator.IsInTransition(0));
         if (IsAnimationPlaying(animationName))
         {
             return;
         }
         if (animator != null && !animator.IsInTransition(0))
         {
+            
             animator.CrossFade(animationName, 0.2f); // Hòa trộn sang animation "Attack" trong 0.2 giây
         }
     }
@@ -29,9 +31,6 @@ public class AnimationManager : MonoBehaviour, IAnimation
     {
         if (animator != null && IsAnimationPlaying(animationName))
         {
-            // Tùy thuộc vào animation và yêu cầu của bạn, bạn có thể
-            // sử dụng CrossFade để dừng mượt mà hơn hoặc ResetTrigger.
-            // Ví dụ đơn giản:
             animator.Play("Idle"); // Chuyển về trạng thái idle
         }
     }

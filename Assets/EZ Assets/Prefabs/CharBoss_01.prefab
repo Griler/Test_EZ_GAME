@@ -1243,6 +1243,8 @@ GameObject:
   - component: {fileID: 1943187249992631569}
   - component: {fileID: 9163096590126558295}
   - component: {fileID: 836263070458285004}
+  - component: {fileID: 4391341367355844566}
+  - component: {fileID: 8410942063864273842}
   m_Layer: 0
   m_Name: CharBoss_01
   m_TagString: Untagged
@@ -1310,7 +1312,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -1330,7 +1332,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1338,6 +1340,30 @@ CapsuleCollider:
   m_Height: 1.05848
   m_Direction: 1
   m_Center: {x: -3.1693448e-10, y: 0.52923906, z: 0.011683197}
+--- !u!114 &4391341367355844566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421653487955196459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330a0281c4a4fa245b37988bfa6fdc37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8410942063864273842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421653487955196459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f081cbbbc484c04786d0523b7d2c41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7503358911111480636
 GameObject:
   m_ObjectHideFlags: 0

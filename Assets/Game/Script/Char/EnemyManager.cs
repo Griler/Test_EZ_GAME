@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class EnemyManager : CharManager,IAttack
 {
-  	public void hit();
-    public void attack();
+    private IAttack _attackImplementation;
+    public void hit()
+    {
+    }
+
+    public void attack()
+    {
+        _attackImplementation.attack();
+    }
 }
